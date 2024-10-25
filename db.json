@@ -1,0 +1,10 @@
+{
+  "installments": [
+    {
+      "id": "xyz",
+      "name": "demo",
+      "display": "demo",
+      "description": "demo"
+    }
+  ]
+}

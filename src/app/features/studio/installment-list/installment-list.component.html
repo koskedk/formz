@@ -1,0 +1,14 @@
+<p>Installments</p>
+<hr/>
+
+<div *ngIf="loading$|async">
+  <h4>loading...</h4>
+</div>
+
+<div *ngIf="error$|async as error">
+  <h3><span style="color: red">{{error|extractError}}</span></h3>
+</div>
+
+<ul *ngFor="let i of installments$|async">
+  <li>{{ i.id }}|{{ i.display }}</li>
+</ul>
